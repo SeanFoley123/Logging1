@@ -1,0 +1,22 @@
+Links:
+https://docs.python.org/2/library/logging.html
+https://docs.python.org/2/howto/logging.html#logging-basic-tutorial
+
+Also check out the warning module
+
+Notes: There are five different levels of severity for logging calls: Debug, Info, Warning, Error, and Critical.
+By default, logging only cares about Warning, Error, and Critical calls
+You can change that with logging.basicConfig(level=blah)
+By default, logging prints to the command line
+You can use basicConfig(filename=blah)
+basicConfig has these optional arguments: filename, filemode (default is append), format, datefmt, level, stream
+You NEED to call basicConfig before you log anything, or it won't work; it will have already initialized some kind of handler, and basicConfig will do
+nothing.
+If you have a file (say main.py) that imports one of your modules (module.py), which also uses logging, and you run basicConfig in main.py, module.py will
+use the same configuration (aka log to the same file).
+Logging can take all kinds of things; dictionaries, numbers, variables, instances.
+You can change your output format using the format keyword in basicConfig'
+All the keywords format can use are in the python docs 15.7.7 LogRecord Attributes, but the useful ones are probably levelname, message, created (when the logger
+was created), msecs(when the message itself was logged), and name. I need to look into name.
+I can't figure out how to get LogRecord to work with a modern .format(): it looks like it was made to interpret old %-type format strings.
+Also, it looks like instead of using created and msecs, we should use asctime. You can get nicer looking date/times using the datefmt argument for basicConfig.

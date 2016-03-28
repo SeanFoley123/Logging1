@@ -1,5 +1,4 @@
-2016-03-27 19:51:48,957 INFO: He asked for 100 bears.
-2016-03-27 19:51:51,540 INFO: He asked for 2 pigs.
-2016-03-27 19:51:51,541 ERROR: The user does not seem to realize that bears and pigs do not play nicely.
-2016-03-27 19:51:54,981 CRITICAL: The user is asking for non-existent animmals. If this continues, our cover may be blown.
-2016-03-27 19:51:57,524 INFO: He asked for 1 lemurs.
+2016-03-28 13:15:13,904 INFO: He asked for 2 bears.
+2016-03-28 13:15:16,118 INFO: He asked for 1 pigs.
+2016-03-28 13:15:16,118 ERROR: The user does not seem to realize that bears and pigs do not play nicely.
+2016-03-28 13:15:21,465 INFO: He asked for 4 lemurs.

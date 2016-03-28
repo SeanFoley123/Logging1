@@ -4,17 +4,17 @@ def print_bears(number):
 	print 'bears'*number
 	global were_bears
 	were_bears = True
-	logging.info('He asked for {} bears.'.format(number))
+	logging.info('The user asked for {} bears.'.format(number))
 
 def print_pigs(number):
 	print 'pig'*number
-	logging.info('He asked for {} pigs.'.format(number))
+	logging.info('The user asked for {} pigs.'.format(number))
 	if were_bears:
 		logging.error('The user does not seem to realize that bears and pigs do not play nicely.')
 
 def print_lemurs(number):
 	print 'lemur'*number*10
-	logging.info('He asked for {} lemurs.'.format(number))
+	logging.info('The user asked for {} lemurs.'.format(number))
 
 
 def main():
